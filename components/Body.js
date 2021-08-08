@@ -1,6 +1,5 @@
 import React from 'react';
-import { RefreshIcon} from '@heroicons/react/outline';
-import NewScript from '../components/NewScript';
+import NewScript from '../components/NewScript'
 import { useRouter } from 'next/router'
 
 
@@ -14,7 +13,7 @@ function Body() {
             < NewScript />
             {/*Buttons*/}
             <div className="space-x-4 mt-4 flex w-full justify-center items-center">
-                <button className="p-2 rounded-full"><RefreshIcon onClick={() => router.reload()}className="h-4 hover:-rotate-180 transition"/></button>
+                <button onClick={() => router.reload()} className="p-2 rounded-full text-xs bg-gray-300">New</button>
             </div>
         </div>
     )

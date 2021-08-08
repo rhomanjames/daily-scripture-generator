@@ -1,6 +1,6 @@
 import React from 'react'
-import {TwitterIcon, FacebookIcon, EmailIcon, LinkedinIcon} from "react-share"
-import {EmailShareButton, TwitterShareButton, FacebookShareButton, LinkedinShareButton} from "react-share"
+import {TwitterIcon, FacebookIcon} from "react-share"
+import {TwitterShareButton, FacebookShareButton} from "react-share"
 
 function NewScript() {
 
