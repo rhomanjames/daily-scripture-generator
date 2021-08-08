@@ -1,5 +1,5 @@
 import React from 'react';
-import { RefreshIcon, ShareIcon } from '@heroicons/react/outline';
+import { RefreshIcon} from '@heroicons/react/outline';
 import NewScript from '../components/NewScript';
 import { useRouter } from 'next/router'
 
