@@ -64,46 +64,38 @@ function NewScript() {
                         "chapter": "Psalms 119:163",
                         "action": "When was the last time you lied? Why?",
                         },
-                        {"name": "I thought on my ways, and turned my feet unto thy testimonies.",  
-                        "chapter": "Psalms 119:59",
-                        "action": "What is one way you can turn your feet back to the testimonie of Yah?.",
+                        {"name": "For whosoever shall keep the whole law, and yet offend in one point, he is guilty of all.",  
+                        "chapter": "James 2:10",
+                        "action": "Find a law you are not keeping a make an action plan to keep it today.",
+                        },
+                        {"name": "Can the fig tree, my brethren, bear olive berries? either a vine, figs? so can no fountain both yield salt water and fresh",  
+                        "chapter": "James 3:12",
+                        "action": "Read this scripture carefully. How is this being exemplified in your life?",
+                        },
+                        {"name": "This wisdom descendeth not from above, but is earthly, sensual, devilish.",  
+                        "chapter": "James 3:15",
+                        "action": "Is some of the wisdom you are holding onto earthly? What is the heavenly alternative?",
+                        },
+                        {"name": "For where envying and strife is, there is confusion and every evil work.",  
+                        "chapter": "James 3:16",
+                        "action": "How can you eliminate envying and strify in your life?",
+                        },
+                        {"name": "Submit yourselves therefore to Elohim. Resist the devil, and he will flee from you.",  
+                        "chapter": "James 4:7",
+                        "action": "How can you resist the devil today to cause him to flee from you?",
+                        },
+                        {"name": "Humble yourselves in the sight of Yahuah, and he shall lift you up.",  
+                        "chapter": "James 4:10",
+                        "action": "Name 2 ways you can minimize your pride and humble yourself before Yah?",
                         },
                         {"name": "I thought on my ways, and turned my feet unto thy testimonies.",  
                         "chapter": "Psalms 119:59",
                         "action": "What is one way you can turn your feet back to the testimonie of Yah?.",
                         },
-                        {"name": "I thought on my ways, and turned my feet unto thy testimonies.",  
-                        "chapter": "Psalms 119:59",
-                        "action": "What is one way you can turn your feet back to the testimonie of Yah?.",
-                        },
-                        {"name": "I thought on my ways, and turned my feet unto thy testimonies.",  
-                        "chapter": "Psalms 119:59",
-                        "action": "What is one way you can turn your feet back to the testimonie of Yah?.",
-                        },
-                        {"name": "I thought on my ways, and turned my feet unto thy testimonies.",  
-                        "chapter": "Psalms 119:59",
-                        "action": "What is one way you can turn your feet back to the testimonie of Yah?.",
-                        },
-                        {"name": "I thought on my ways, and turned my feet unto thy testimonies.",  
-                        "chapter": "Psalms 119:59",
-                        "action": "What is one way you can turn your feet back to the testimonie of Yah?.",
-                        },
-                        {"name": "I thought on my ways, and turned my feet unto thy testimonies.",  
-                        "chapter": "Psalms 119:59",
-                        "action": "What is one way you can turn your feet back to the testimonie of Yah?.",
-                        },
-                        {"name": "I thought on my ways, and turned my feet unto thy testimonies.",  
-                        "chapter": "Psalms 119:59",
-                        "action": "What is one way you can turn your feet back to the testimonie of Yah?.",
-                        },
-                        {"name": "I thought on my ways, and turned my feet unto thy testimonies.",  
-                        "chapter": "Psalms 119:59",
-                        "action": "What is one way you can turn your feet back to the testimonie of Yah?.",
-                        },
-                        {"name": "I thought on my ways, and turned my feet unto thy testimonies.",  
-                        "chapter": "Psalms 119:59",
-                        "action": "What is one way you can turn your feet back to the testimonie of Yah?.",
-                        }]
+                        {"name": "Therefore to him that knoweth to do good, and doeth it not, to him it is sin.",  
+                        "chapter": "James 4:17",
+                        "action": "Familiarize yourself with Leviticus and Deuteronomy to become more aware of Yah's laws.",
+                        },]
 
                         let num = Math.floor(Math.random() * scripts.length)
         return (
@@ -116,7 +108,7 @@ function NewScript() {
             {/*Share*/}
             <div className="space-x-4 mt-4 flex w-full justify-center items-center">
                 <FacebookShareButton
-                url="https://github.com/rhomanjames"
+                url="https://yahdaily.vercel.app/"
                 quote={scripts[num].name + " (" + scripts[num].chapter + ")" + " | " + scripts[num].action}
                 title="My Daily Scriptures"
                 className="Demo__some-network__share-button">
@@ -125,7 +117,7 @@ function NewScript() {
                     round />
                 </FacebookShareButton>
                 <TwitterShareButton
-                url="www.servingYah.com"
+                url="https://yahdaily.vercel.app/"
                 className="Demo__some-network__share-button">
                     <TwitterIcon
                     size={32}
