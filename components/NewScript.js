@@ -1,6 +1,6 @@
 import React from 'react'
-import {TwitterIcon, FacebookIcon} from "react-share"
-import {TwitterShareButton, FacebookShareButton} from "react-share"
+import {TwitterIcon, FacebookIcon, LinkedinIcon, RedditIcon} from "react-share"
+import {TwitterShareButton, FacebookShareButton, LinkedinShareButton, RedditShareButton, FacebookShareCount} from "react-share"
 
 
 
@@ -38,7 +38,7 @@ function NewScript() {
                         },
                         {"name": "I thought on my ways, and turned my feet unto thy testimonies.",  
                         "chapter": "Psalms 119:59",
-                        "action": "What is one way you can turn your feet back to the testimonie of Yah?.",
+                        "action": "What is one way you can turn your feet back to the testimonies of Yah?",
                         },
                         {"name": "I made haste, and delayed not to keep thy commandments.",  
                         "chapter": "Psalms 119:60",
@@ -54,11 +54,11 @@ function NewScript() {
                         },
                         {"name": "My flesh trembleth for fear of thee; and I am afraid of thy judgments.",  
                         "chapter": "Psalms 119:120",
-                        "action": "Are you afraid of Yah's righteos judgements according to the Torah?",
+                        "action": "Are you afraid of Yah's righteous judgements according to the Torah?",
                         },
                         {"name": "I thought on my ways, and turned my feet unto thy testimonies.",  
                         "chapter": "Psalms 119:59",
-                        "action": "What is one way you can turn your feet back to the testimonie of Yah?.",
+                        "action": "What is one way you can turn your feet back to the testimony of Yah?",
                         },
                         {"name": "I hate and abhor lying: but thy law do I love.",  
                         "chapter": "Psalms 119:163",
@@ -78,7 +78,7 @@ function NewScript() {
                         },
                         {"name": "For where envying and strife is, there is confusion and every evil work.",  
                         "chapter": "James 3:16",
-                        "action": "How can you eliminate envying and strify in your life?",
+                        "action": "How can you eliminate envying and strife in your life?",
                         },
                         {"name": "Submit yourselves therefore to Elohim. Resist the devil, and he will flee from you.",  
                         "chapter": "James 4:7",
@@ -90,12 +90,20 @@ function NewScript() {
                         },
                         {"name": "I thought on my ways, and turned my feet unto thy testimonies.",  
                         "chapter": "Psalms 119:59",
-                        "action": "What is one way you can turn your feet back to the testimonie of Yah?.",
+                        "action": "What is one way you can turn your feet back to the testimonies of Yah?",
                         },
                         {"name": "Therefore to him that knoweth to do good, and doeth it not, to him it is sin.",  
                         "chapter": "James 4:17",
                         "action": "Familiarize yourself with Leviticus and Deuteronomy to become more aware of Yah's laws.",
-                        },]
+                        },
+                        {"name": "Then Yahushua said unto them, 'Yet a little while is the light with you. Walk while ye have the light, lest, darkness come upon you; for he that walks in darkness knows not where he goes'",  
+                        "chapter": "John 12:35",
+                        "action": "We know that the commandments are a lamp, and the Torah (Law) is the light. Let's let those guide us in darkness.",
+                        },
+                        {"name": "For Yahuah your Elohim is he that goes with you, to fight for you against your enemies, to save you.",  
+                        "chapter": "Deuteronomy 20:4",
+                        "action": "Remember that Yah is with you, if you keep his commandments. Trust that he will fight your battles for you.",
+                        }]
 
                         let num = Math.floor(Math.random() * scripts.length)
         return (
@@ -112,6 +120,7 @@ function NewScript() {
                 quote={scripts[num].name + " (" + scripts[num].chapter + ")" + " | " + scripts[num].action}
                 title="My Daily Scriptures"
                 className="Demo__some-network__share-button">
+                    <FacebookShareCount url="https://yahdaily.vercel.app/" />
                     <FacebookIcon
                     size={32}
                     round />
@@ -123,10 +132,29 @@ function NewScript() {
                     size={32}
                     round />
                 </TwitterShareButton>
+                <LinkedinShareButton
+                url="https://yahdaily.vercel.app/"
+                summary={scripts[num].name}
+                source="Daily Scripture Generator"
+                className="Demo__some-network__share-button">
+                    <LinkedinIcon
+                    size={32}
+                    round />
+                </LinkedinShareButton>
+                <RedditShareButton
+                url="https://yahdaily.vercel.app/"
+                summary={scripts[num].name}
+                source="Daily Scripture Generator"
+                className="Demo__some-network__share-button">
+                    <RedditIcon
+                    size={32}
+                    round />
+                </RedditShareButton>
             </div>
+
             {/*Action*/}
-            <div className="w-3/4 md:w-1/2 justify-center text-sm rounded-lg bg-blue-50 mt-4 shadow-inner hover:border-blue-300 transition border-2 border-transparent flex p-2 flex-col text-center">
-                <h4 className=" justify-center italic px-8" id="action">{scripts[num].action}</h4>
+            <div className="w-full md:w-3/4 justify-center text-sm rounded-lg bg-blue-50 mt-4 shadow-inner hover:border-blue-300 transition border-2 border-transparent flex p-2 flex-col text-center">
+                <h4 className=" justify-center italic px-2 md:px-8" id="action">{scripts[num].action}</h4>
             </div>
         </div>
     )}
